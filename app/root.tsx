@@ -63,7 +63,8 @@ export default function App() {
 
 export function ErrorBoundary() {
   const caught: any = useRouteError();
-  return (
+  console.log(caught.status)
+  return caught.status ? (
     <div className="flex flex-col items-center justify-center w-full h-full overflow-hidden ">
       <div className="text-indigo-500 font-bold text-7xl">
         {caught.status}
@@ -75,6 +76,13 @@ export function ErrorBoundary() {
       <Link to={'/'} className="mt-6 bg-blue-500 hover:bg-blue-700 px-4 py-1 rounded-md transition-all duration-300">
         <button className="flex items-center gap-2 hover:gap-3 transition-all duration-300">Back to home <MoveRight/></button>
       </Link>
+    </div>
+  ) : (
+    <div className="flex flex-col items-center gap-5 text-neutral-500 justify-center w-full h-full overflow-hidden ">
+      <div className="font-bold text-3xl  xl:text-4xl lg:text-4xl md:text-5xl">
+        Something error in Project
+      </div>
+      <span>Check your log</span>
     </div>
   )
 }

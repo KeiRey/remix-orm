@@ -10,14 +10,14 @@ import {
   Scripts,
   ScrollRestoration,
   useRouteError
-} from "/build/_shared/chunk-IW2THDXD.js";
+} from "/build/_shared/chunk-L5WYQWZV.js";
 import "/build/_shared/chunk-U4FRFQSK.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XGOTYLZ5.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-NSE5437T.js";
+} from "/build/_shared/chunk-TOJREAAB.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import "/build/_shared/chunk-7M6SC7J5.js";
 import {
@@ -25,7 +25,7 @@ import {
 } from "/build/_shared/chunk-PNG5AS42.js";
 
 // app/tailwind.css?url
-var tailwind_default = "/build/_assets/tailwind-QVTCPW3Q.css?url";
+var tailwind_default = "/build/_assets/tailwind-XHLNFJH2.css?url";
 
 // app/root.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
@@ -146,10 +146,11 @@ _c3 = App;
 function ErrorBoundary() {
   _s();
   const caught = useRouteError();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex flex-col items-center justify-center w-full h-full overflow-hidden ", children: [
+  console.log(caught.status);
+  return caught.status ? /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex flex-col items-center justify-center w-full h-full overflow-hidden ", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "text-indigo-500 font-bold text-7xl", children: caught.status }, void 0, false, {
       fileName: "app/root.tsx",
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "font-bold text-3xl text-neutral-500 xl:text-4xl lg:text-4xl md:text-5xl", children: [
@@ -157,29 +158,44 @@ function ErrorBoundary() {
       caught.statusText
     ] }, void 0, true, {
       fileName: "app/root.tsx",
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: "/", className: "mt-6 bg-blue-500 hover:bg-blue-700 px-4 py-1 rounded-md transition-all duration-300", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", { className: "flex items-center gap-2 hover:gap-3 transition-all duration-300", children: [
       "Back to home ",
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(MoveRight, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 106
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.tsx",
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/root.tsx",
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/root.tsx",
-    lineNumber: 75,
-    columnNumber: 10
+    lineNumber: 76,
+    columnNumber: 26
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex flex-col items-center gap-5 text-neutral-500 justify-center w-full h-full overflow-hidden ", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "font-bold text-3xl  xl:text-4xl lg:text-4xl md:text-5xl", children: "Something error in Project" }, void 0, false, {
+      fileName: "app/root.tsx",
+      lineNumber: 88,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "Check your log" }, void 0, false, {
+      fileName: "app/root.tsx",
+      lineNumber: 91,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "app/root.tsx",
+    lineNumber: 87,
+    columnNumber: 14
   }, this);
 }
 _s(ErrorBoundary, "hZWKyTvuODTcImoFGhUlr6kJNts=", false, function() {
@@ -202,4 +218,4 @@ export {
   App as default,
   links
 };
-//# sourceMappingURL=/build/root-I5AA2RIP.js.map
+//# sourceMappingURL=/build/root-YW23DCWI.js.map
